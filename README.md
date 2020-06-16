@@ -1,13 +1,7 @@
-# Your GitHub Learning Lab Repository for GitHub Pages
+# NFSU2 Extra Options
+Extra Options is a script mod which improves your gaming experience by many ways. It's developed by ExOpts Team.  
+Check [NFSU2ExOpts Wiki (Work in progress)](http://extraoptions.wikia.com/wiki/Need_for_Speed:_Underground_2) out for further information.
 
-Welcome to **your** repository for your GitHub Learning Lab course. This repository will be used during the different activities that I will be guiding you through. 
-
-Oh! I haven't introduced myself...
-
-I'm the GitHub Learning Lab bot and I'm here to help guide you in your journey to learn and master the various topics covered in this course. I will be using Issue and Pull Request comments to communicate with you. In fact, I already added an issue for you to check out.
-
-![issue tab](https://lab.github.com/public/images/issue_tab.png)
-
-I'll meet you over there, can't wait to get started!
-
-This repository is licensed under [MIT](../LICENSE) (c) 2019 GitHub, Inc.
+# Download
+You can [download Extra Options](https://github.com/nlgzrgn/NFSU2ExOpts/releases) from Releases page.  
+If you want to compile it yourself, check the [Source Code (not available yet)](http://extraoptions.wikia.com/wiki/Source_Code) page out.

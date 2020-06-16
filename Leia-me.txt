@@ -1,0 +1,95 @@
+NFS Underground 2 - Extra Options - Build 1
+criado por nlgzrgn
+------------------------------------------------------------------------------------------------------------
+Funções
+(Todas as opções podem ser editadas a partir de um arquivo .ini)
+
+--Limite de contagem de oponentes e voltas.
+> Você pode deixar a quandidades de voltas no 0 (o que deixa impossível terminar a corrida) ou mudar para 127 (corridas bem longas).
+> O máximo de oponentes em corridas estão limitados à 5 ao invés de 3. Mais de 6 jogadores irá crashar o jogo.
+! Essas opções também valem para corridas em Lan.
+
+--Possibilidade de multiplicar os pontos de drift até x9.
+> O valor padrão era x5. Caso queira você pode voltar ao valor padrão ou até mesmo utilizar x1 para corridas de drift mais desafiadoras.
+
+--Capacidade de mudar a aparência dos pontos de drift,
+> Pode adicionar um sinal de + para deixa-lo como por exemplo em textos "Power Slide", "Hang Time" ou "Hydros".
+> Poderá mostrar os pontos de drift sem multiplicar. Por erxemplo, ao invés de 1500 pontos, você teria 500x3 em textos como "Avoided Accident" ou "Clear Section".
+
+--Desbloqueio os carros exclusivos da versão PAL (Peugeot 106 e Opel Corsa) na versão NTSC.
+> Eles estarão disponíveis para a customização e para a loja de carros no modo career.
+! Você deve ter os arquivos desses carros (pastas PEUGOT106 e CORSA) na pasta CARS. Caso contrário, essa opção não irá funcionar.
+! Também foi adicionado uma opção para desbloquear todos os carros do início! (Que tal iniciar um novo jogo com um RX7?)
+
+--Seleção de corridas para o modo Free Run.
+> Essa opção tem uma longa lista! Apenas dê uma chance.
+
+--Qualquer corrida em qualquer modo de jogo.
+> Isso vai deixar a lista de corridas muito grande. Após algumas corridas os ícones não irão rolar de acordo com a barra de seleção, mas você ainda poderá selecionar as corridas normalmente.
+! Se você selecionar qualquer corrida que não exista nos arquivos do jogo, ela será substituida pelo ID 4000 (Free Roam) enquanto você está na tela de seleção.
+! Se você selecionar uma Sprint Drift (corridas de Drift em Jackson Heights) em outro modo, seu jogo irá crashar ao terminar a corrida.
+
+--Remover as barreiras de neon.
+> Você poderá remover tanto os neons de áreas bloqueadas ou indicadores de rotas se quiser.
+
+------------------------------------------------------------------------------------------------------------
+Instalação:
+1) Abra a pasta "Main Files".
+2) Selecione tudo.
+3) Copie os arquivos para o diretório do NFSUG2. (Use Ctrl+C, Ctrl+V / Cmd+C, Cmd+V / Strg+C, Strg+V; Botão direito > Copiar; via xcopy command no CMD; ou como você quiser.)
+4) (Opcional) Editar o arquivo NFSU2ExtraOptionsSettings.ini.
+5) Inicie o jogo.
+6) Faça o que quiser e seja feliz!
+
+! Arquivos .ini  por padrão estarão assim: (Os comentários estão traduzidos no Leia-me)
+
+[LapControllers]
+Minimum = 0 // Número mínimo de voltas que podem ser selecionados no Quick Race. (Padrão = 0) (0/127)
+Maximum = 127 // Número máximo de voltas que podem ser selecionados no Quick Race. (Padrão = 127) (0/127)
+KOEnabled = 5 // Número de volas quando o modo Lap KO for ativado no Quick Race. (Padrão = 5) (0/127)
+
+[OpponentControllers]
+Minimum = 0 // Número mínimo de oponentes que podem ser selecionados no Quick Race. (Padrão = 0) (0/5)
+Maximum = 5 // Número máximo de oponentes que podem ser selecionados no Quick Race. (Padrão = 0) (0/5)
+KOEnabled = 5 // Número de oponentes quando o modo Lap KO for ativado no Quick Race. (Padrão = 0) (0/5)
+
+[LAN]
+MinimumLapsCircuit = 0 // Número mínimo de voltas que podem ser selecionados em Lan para Circuits. (Padrão = 0) (0/127)
+MinimumLapsDrift = 0 // Número mínimo de voltas que podem ser selecionados em Lan para Drifts. (Padrão = 0) (0/127)
+MinimumLapsStreetX = 0 // Número mínimo de voltas que podem ser selecionados em Lan para Street X. (Padrão = 0) (0/127)
+MaximumLaps = 127 // Número máximo de voltas que podem ser selecionados em Lan. (Padrão = 127) (0/127)
+MaximumPlayers = 6 // Número máximo de jogadores que podem ser selecionados em Lan. (Default = 6) (2/6)
+
+[Drift]
+MaximumMultiplier = 9 // Número máximo para a multiplicação dos pontos de drift. (Padrão = 9) (1/9)
+PlusSign = 0 // Mostra um sinal de + antes dos pontos de drift. (0 = Desativado, 1 = Ativado)
+ShowWithoutMultiplying = 0 // Mostra os pontos de drift como 500x3 ao invés de 1500. (0 = Desativado, 1 = Ativado)
+
+[Unlocks]
+Unlock106AndCorsa = 1 // Remove a restrição de região para o Peugeot 106 e Opel Corsa e os deixa disponíveis para a versão NTSC do jogo. (0 = Desativado, 1 = Ativado)
+UnlockAllCars = 0 // Desbloqueia todos os carros. (0 = Desativado, 1 = Ativado)
+UnlockAllTracks = 1 // Desbloqueia todas as corridas. (0 = Desativado, 1 = Ativado)
+FreeRunTrackSelect = 1 // Ativa a tela de seleção de corridas para o Free Run no Quick Race. (0 = Desativado, 1 = Ativado)
+AnyTrackInAnyRaceMode = 1 // Desbloqueia corridas ocultas e deixa todas as corridas selecionáveis em todos os modos de jogo no Quick Race. (0 = Desativado, 1 = Ativado)
+
+[Misc]
+RemoveRaceBarriers = 0 // Remove as barreiras de neon que mostram a rota das corridas. (0 = Desativado, 1 = Ativado)
+RemoveLockedAreaBarriers = 1 // Remove as barreiras de noen que bloqueiam as áreas no ínicio do modo carreira. (0 = Desativado, 1 = Ativado)
+
+------------------------------------------------------------------------------------------------------------
+Changelog: (+ Adição, * Alteração, ! Atenção, - Remoção)
+
+Build 1:
++ Lançamento inicial.
+------------------------------------------------------------------------------------------------------------
+Agradecimentos:
+
+379Felipe por algumas das opções de LAN e pela tradução em Português (Brasil).
+ThirteenAG pelo Universal ASI Loader e pelo .ini Reader.
+thelink2012 pelo injector.
+A mim mesmo pelos hacks & e por estes mods..
+------------------------------------------------------------------------------------------------------------
+
+Até mais!
+©2015 nlgzrgn - Não há direitos reservados. ;)
+

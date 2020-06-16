@@ -1,0 +1,94 @@
+NFS Underground 2 - Extra Options - Build 1
+Made by nlgzrgn
+------------------------------------------------------------------------------------------------------------
+Features:
+(Every option can be edited from .ini file.)
+
+--Lap and opponent count restrictions are modified.
+> You can have from 0 (which makes the race unlimited) to 127 (Really long races) laps.
+> Maximum opponents are now limited with 5 instead of 3. More than 6 players will crash the game.
+! These options are valid for LAN races, too.
+
+--Drift multiplier can now be modified up to x9.
+> The default value was x5. You can revert it back if you want, or use x1 for more challenging drift races.
+
+--You can change the appearance of Drift Points.
+> Add a + sign in front of them to make it like "Power Slide", "Hang Time" or "Hydros".
+> Show it without multiplying, Instead of 1500, have it 500x3 like "Avoided Accident" or "Clear Section".
+
+--You can unlock cars from PAL version (Peugeot 106 and Opel Corsa) for the NTSC version of the game.
+> They will be available at Customize Menu and Career Car Lot.
+! You must have the files for these cars (PEUGOT106 and CORSA folders) on your CARS folder. Otherwise, this option will not work.
+! I've also added an option to unlock all the cars from the beginning! (Start the career with a RX7, huh?)
+
+--You can select a track for Free Run (9) game mode.
+> It has a very long list! Just try it.
+
+--You can have every track on every game mode.
+> This will make the list too long. After some races, icons won't scroll. But you can select the races safely.
+! If you select a track which doesn't exist in game files, it'll be replaced with 4000 (Free Roam) while you're on track options screen.
+! If you select a Sprint Drift (Or, Drift races from Jackson Heights) for another game mode, your game will crash when you finish the race.
+
+--You can remove the neon barriers.
+> Locked area barriers or route indicators, remove if you don't want them!
+------------------------------------------------------------------------------------------------------------
+Installation:
+
+1) Open "Main Files" folder.
+2) Select everything.
+3) Copy them to your NFSU2 Installation Folder. (Use Ctrl+C, Ctrl+V / Cmd+C, Cmd+V / Strg+C, Strg+V; Right-Click > Copy; via xcopy command on CMD; or how do you like it.)
+4) (Optional) Edit the NFSU2ExtraOptionsSettings.ini file.
+5) Run NFSU2.
+6) And do whatever you want!
+
+!Untouched .ini file looks like this:
+
+[LapControllers]
+Minimum = 0 // Minimum number of laps can be selected at Quick Race options screen. (Default = 0) (0/127)
+Maximum = 127 // Maximum number of laps can be selected at Quick Race options screen. (Default = 127) (0/127)
+KOEnabled = 5 // Number of laps when Lap KO enabled at Quick Race options screen. (Default = 5) (0/127)
+
+[OpponentControllers]
+Minimum = 0 // Minimum number of opponents can be selected at Quick Race options screen. (Default = 0) (0/5)
+Maximum = 5 // Maximum number of opponents can be selected at Quick Race options screen. (Default = 5) (0/5)
+KOEnabled = 5 // Number of opponents when Lap KO enabled at Quick Race options screen. (Default = 5) (0/5)
+
+[LAN]
+MinimumLapsCircuit = 0 // Minimum number of laps can be selected at LAN Circuit Race options screen. (Default = 0) (0/127)
+MinimumLapsDrift = 0 // Minimum number of laps can be selected at LAN Drift Race options screen. (Default = 0) (0/127)
+MinimumLapsStreetX = 0 // Minimum number of laps can be selected at LAN Street X Race options screen. (Default = 0) (0/127)
+MaximumLaps = 127 // Maximum number of laps can be selected at LAN Race options screen. (Default = 127) (0/127)
+MaximumPlayers = 6 // Maximum number of players can be selected at LAN Race options screen. (Default = 6) (2/6)
+
+[Drift]
+MaximumMultiplier = 9 // Maximum drift multipiler. (Default = 9) (1/9)
+PlusSign = 0 // Show a + sign before drift point while drifting. (0 = False, 1 = True)
+ShowWithoutMultiplying = 0 // Shows the drift point as 500x3 instead of 1500 while drifting. (0 = False, 1 = True)
+
+[Unlocks]
+Unlock106AndCorsa = 1 // Removes Region restrictions of 106 and Corsa and makes them available with your NTSC game. (0 = False, 1 = True)
+UnlockAllCars = 0 // Unlocks all race cars. (0 = False, 1 = True)
+UnlockAllTracks = 1 // Unlocks all tracks. (0 = False, 1 = True)
+FreeRunTrackSelect = 1 // Enables Track Selection Screen for Free Run (9) Quick Race Mode. (0 = False, 1 = True)
+AnyTrackInAnyRaceMode = 1 // Unlock hidden tracks and makes every track selectable at every race mode from Quick Race menu. Unexisting tracks will be replaced with 4000 to prevent crashes. (0 = False, 1 = True)
+
+[Misc]
+RemoveRaceBarriers = 0 // Removes Neon Barriers which show the route. (0 = False, 1 = True)
+RemoveLockedAreaBarriers = 1 // Removes Neon Barriers which lock the areas at Career mode. (0 = False, 1 = True)
+
+------------------------------------------------------------------------------------------------------------
+Changelog: (+ Addition, * Change, ! Attention, - Deletion)
+
+Build 1:
++ Initial release.
+------------------------------------------------------------------------------------------------------------
+Thanks to:
+
+379Felipe for LAN things and Portuguese (Brasil) translation.
+ThirteenAG for Universal ASI Loader, and .ini Reader.
+thelink2012 for injector.
+Me, for hacks & this mod.
+------------------------------------------------------------------------------------------------------------
+
+See ya!
+©2015 nlgzrgn - No rights reserved. ;)

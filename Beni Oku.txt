@@ -1,0 +1,94 @@
+NFS Underground 2 - Ek Seçenekler - Sürüm 1
+nlgzrgn tarafýndan yapýlmýþtýr.
+------------------------------------------------------------------------------------------------------------
+Özellikler:
+(Tüm seçenekleri .ini dosyasýndan düzenleyebilirsiniz.)
+
+--Tur ve rakip oyuncu sayýsý sýnýrlamalarý deðiþtirildi.
+> Tur sayýsýný artýk 0'dan (yarýþý sonsuz yapar) 127'ye (çok uzun yarýþlar) kadar seçebilirsiniz.
+> Rakip oyuncu sayýsý sýnýrý artýk 3 deðil, 5. 6'dan fazla oyuncu, oyunun çakýlmasýna neden olacaktýr.
+! Bu seçenekler Yerel Að (LAN) yarýþlarý için de geçerlidir.
+
+--Yanlama çarpaný x9'a kadar yükseltilebilir.
+> Varsayýlan deðer x5 idi. Ýsterseniz eski deðere geri dönebilir ya da daha zorlayýcý yanlama yarýþlarý için x1 kullanabilirsiniz.
+
+--Yanlama puanýnýn görünümünü deðiþtirebilirsiniz.
+> "Patinaj", "Asýlý Kalma Süresi" ya da "Hidrolik" gibi görünmesi için önüne bir + ekleyebilirsiniz.
+> Puaný çarpýlmadan gösterebilirsiniz, "Kazadan Kurtuluþ" ya da "Temiz Sürüþ" gibi 1500 yerine 500x3 þeklinde görünecektir.
+
+--Oyunun NTSC (Kuzey Amerika) sürümü için PAL (Avrupa) sürümündeki arabalarýn (Peugeot 106 ve Opel Corsa) kilitlerini açabilirsiniz.
+> Özelleþtirme menüsünde ve Kariyer Araba Dükkanýnda bu arabalarý seçebilirsiniz.
+! Bu arabalarýn dosyalarýný (PEUGOT106 ve CORSA klasörleri) CARS klasöründe bulundurmanýz gerekmektedir. Aksi takdirde bu seçenek çalýþmayacaktýr.
+! Tüm arabalarý oyunun en baþýndan açan bir seçenek de ekledim! (Oyuna RX7 ile baþlamaya ne dersiniz?)
+
+--Özgür Gezinti (9) için herhangi bir yarýþ pistini seçebilirsiniz.
+> Uzun bir yarýþ dizelgesi (listesi) var! Kesinlikle deneyin.
+
+--Tüm oyun modlarý için tüm yarýþ pistlerini seçebilirsiniz.
+> Bu, listenin çok uzamasýna neden olacaktýr. Birkaç yarýþ sonra imgeler kaymayacaktýr, ama yine de yarýþlarý güvenle seçebilirsiniz.
+! Oyun dosyalarýnda yer almayan bir pist seçip seçenekler ekranýna geldiðinizde, seçiminiz pist 4000 (Özgür Gezinti) ile deðiþtirilecektir.
+! Herhangi bir Koþu Yanlama (Ya da Jackson Daðý'nda bulunan bir Yanlama yarýþý) seçerseniz yarýþý bitirdiðinizde oyun çakýlacaktýr.
+
+--Neon engelleri kaldýrabilirsiniz.
+> Kilitli bölge engelleri ya da yol göstericileri, istemiyorsanýz kaldýrýn gitsin!
+------------------------------------------------------------------------------------------------------------
+Kurulum
+
+1) "Main Files" klasörünü açýn.
+2) Her neni (þeyi) seçin.
+3) Seçtiklerini NFSU2'yi kurmuþ olduðunuz klasöre kopyalayýn. (Denetim(Ctrl)+C, Denetim+V / Cmd+C, Cmd+V / Strg+C, Strg+V; Uzun (sað) dokunma > Kopyala; ya da CMD'deki xcopy komutuyla; ya da baþka nasýl isterseniz.)
+4) (Ýsteðe baðlý) NFSU2ExtraOptionsSettings.ini dosyasýný düzenleyin.
+5) NFSU2'yi çalýþtýrýn.
+6) Ve ne istiyorsanýz yapýn!
+
+!Dokunulmamýþ .ini dosyasý bu biçimde görünmektedir. (Beni oku dosyasý için açýklamalar çevirilmiþtir.)
+
+[LapControllers]
+Minimum = 0 // Yarýþ seçenekleri ekranýnda seçilebilecek en az Tur sayýsý. (Varsayýlan = 0) (0/127)
+Maximum = 127 // Yarýþ seçenekleri ekranýnda seçilebilecek en çok Tur sayýsý. (Varsayýlan = 127) (0/127)
+KOEnabled = 5 // Yarýþ seçenekleri ekranýnda, eleme seçeneði etkinleþtirildiðinde belirlenecek Tur sayýsý. (Varsayýlan = 5) (0/127)
+
+[OpponentControllers]
+Minimum = 0 // Yarýþ seçenekleri ekranýnda seçilebilecek en az Rakip Oyuncu sayýsý. (Varsayýlan = 0) (0/5)
+Maximum = 5 // Yarýþ seçenekleri ekranýnda seçilebilecek en çok Rakip Oyuncu sayýsý. (Varsayýlan = 5) (0/5)
+KOEnabled = 5 // Yarýþ seçenekleri ekranýnda, eleme seçeneði etkinleþtirildiðinde belirlenecek Rakip Oyuncu sayýsý. (Varsayýlan = 5) (0/5)
+
+[LAN]
+MinimumLapsCircuit = 0 // Að (LAN) için, Devre (Circuit) yarýþ seçenekleri ekranýnda seçilebilecek en az Tur sayýsý. (Varsayýlan = 0) (0/127)
+MinimumLapsDrift = 0 // Að (LAN) için, Yanlama (Drift) yarýþ seçenekleri ekranýnda seçilebilecek en az Tur sayýsý. (Varsayýlan = 0) (0/127)
+MinimumLapsStreetX = 0 // Að (LAN) için, Devre (Street X) yarýþ seçenekleri ekranýnda seçilebilecek en az Tur sayýsý. (Varsayýlan = 0) (0/127)
+MaximumLaps = 127 // Að (LAN) için, yarýþ seçenekleri ekranýnda seçilebilecek en çok Tur sayýsý. (Varsayýlan = 127) (0/127)
+MaximumPlayers = 6 // Að (LAN) için, yarýþ seçenekleri ekranýnda seçilebilecek en çok oyuncu sayýsý. (Varsayýlan = 6) (2/6)
+
+[Drift]
+MaximumMultiplier = 9 // En yüksek yanlama çarpaný. (Varsayýlan = 9) (1/9)
+PlusSign = 0 // Yanlarken gösterilen puanýn baþýna + iþareti ekle. (0 = Hayýr, 1 = Evet)
+ShowWithoutMultiplying = 0 // Yanlarken gösterilen puaný 1500 yerine 500x3 biçiminde göster. (0 = Hayýr, 1 = Evet)
+
+[Unlocks]
+Unlock106AndCorsa = 1 // 106 and Corsa için bölge sýnýrlamalarýný kaldýrýr ve bu arabalarý NTSC sürümünde de kullanabilmenizi saðlar. (0 = Hayýr, 1 = Evet)
+UnlockAllCars = 0 // Tüm yarýþ arabalarýnýn kiltlerini kaldýrýr. (0 = Hayýr, 1 = Evet)
+UnlockAllTracks = 1 // Tüm yarýþ pistlerinin kilitlerini kaldýrýr. (0 = Hayýr, 1 = Evet)
+FreeRunTrackSelect = 1 // Özgür Gezinti (9) oyun modu için pist seçim ekranýný etkinleþtirir. (0 = Hayýr, 1 = Evet)
+AnyTrackInAnyRaceMode = 1 // Gizli pistlerin kilitlerini kaldýrýr ve tüm pistleri tüm yarýþ modlarýnýn altýnda gösterir. Çakýlmalarý önlemek için, dosyalarda bulunmayan pistler seçildiðinde, bunlar 4000 (Özgür Gezinti) olarak deðiþtirilecektir. (0 = Hayýr, 1 = Evet)
+
+[Misc]
+RemoveRaceBarriers = 0 // Yolu gösteren oklu neon engelleri kaldýrýr. (0 = Hayýr, 1 = Evet)
+RemoveLockedAreaBarriers = 1 // Kariyer modundaki kilitli bölgeleri gösteren neon engelleri kaldýrýr. (0 = Hayýr, 1 = Evet)
+
+------------------------------------------------------------------------------------------------------------
+Deðiþiklikler: (+ Ekleme, * Düzenleme, ! Uyarý, - Kaldýrma)
+
+Sürüm 1:
++ Ýlk sürüm.
+------------------------------------------------------------------------------------------------------------
+Teþekkürler:
+
+Að (LAN) þeyleri ve Portekizce (Brezilya) çeviri için 379Felipe'ye.
+Evrensel ASI yükleyicisi, .ini okuyucusu için ThirteenAG'ye.
+Baðlayýcý için thelink2012'ye.
+Bu mod ve içindeki düzenlemeler için bana.
+------------------------------------------------------------------------------------------------------------
+
+Görüþürüz!
+©2015 nlgzrgn - Hiçbir hakký saklý deðildir. ;)
